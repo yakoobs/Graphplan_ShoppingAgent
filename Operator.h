@@ -7,7 +7,7 @@
 
 #include "Predicate.h"
 
-typedef vector <Predicate*> Predicates;
+typedef vector <Predicate> Predicates;
 typedef string ActionName;
 
 class Operator {

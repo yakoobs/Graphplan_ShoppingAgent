@@ -14,10 +14,14 @@ typedef string PredicateName;
 typedef string PredicateArgument;
 typedef vector <PredicateArgument> PredicateArguments;
 
-class Predicate {
+struct Predicate {
+    Predicate(const PredicateName &name, const PredicateArguments &arguments, bool isPositive);
+
     PredicateName name;
     PredicateArguments arguments;
-    bool positive;
+    bool isPositive = true;
+
+    string description();
 };
 
 
